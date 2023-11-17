@@ -11,7 +11,7 @@ import { UserController, PostController } from './controllers/index.js';
 
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(process.env.MONGODB_URL)
   .then(() => console.log("DB ok"))
   .catch(err => console.log("DB error", err));
 
